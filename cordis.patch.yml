@@ -1,0 +1,11 @@
+# dsh-faxin-search —— DSH bundle patch
+# 挂载声明：DSH 启动时按 bundle 层栈叠加各插件 patch，本文件把
+# dsh-faxin-search 插件插入 Web/desktop profile 的配置树。
+#
+# 安装方式：
+#   dsh plugin --profile desktop add link:<本插件目录绝对路径>
+# 或本地手动安装（见 README.md）。
+
+- insert:
+    - id: dsh-faxin-search
+      name: dsh-faxin-search
