@@ -1,0 +1,43 @@
+{
+  "name": "dsh-faxin-search",
+  "version": "0.1.0",
+  "description": "DSH 客户端插件：登录你的法信(faxin.cn)账号，向 AI 提供结构化的法律条文 / 司法解释 / 裁判规则(审判意见) / 指导性案例检索工具",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "lib/",
+    "server/",
+    "panel/",
+    "README.md",
+    "docs/"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "faxin",
+    "law",
+    "legal-search",
+    "mcp"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.6 <0.2.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-mcp-client": "0.1.0-rc.6"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24"
+  },
+  "license": "MIT"
+}
